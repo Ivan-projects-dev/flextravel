@@ -138,6 +138,7 @@ html {
 .second .second_block {
     height: 350px;
     width: 350px;
+    text-decoration: none;
 }
 
 .second .second_block .second_img {
@@ -468,6 +469,84 @@ iframe {
     margin-bottom: 10px;
 }
 
-.overlay .sign_up-modal .sign_up-form button, .overlay .sign_in-modal .sign_in-form button {
+.overlay .sign_up-modal .sign_up-form .sign_up-btn, .overlay .sign_in-modal .sign_in-form button {
     margin: 0;
+    cursor: pointer;
 }
+
+/* Latvia */
+
+.latvia {
+    min-height: 1000px;
+    background-color: #F6F6F6;
+    padding: 100px 0 100px 0;
+}
+
+/* Latvia -> Riga */
+
+/* Country -> city */
+
+.city {
+    min-height: 600px;
+    background-color: #F6F6F6;
+    padding: 100px 0 100px 0;
+}
+
+
+
+/* Comment form */
+
+.comment {
+    background-color: rgb(133, 207, 249);
+    padding: 20px 0 20px 0;
+}
+
+.comment .comment_form {
+    width: 600px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment .comment_form input {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+    background-color: white;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.comment .comment_form textarea {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 20px;
+    background-color: white;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.comment .comment_form .comment_btn {
+    border-radius: 10px;
+    background-color: white; 
+    color: rgb(133, 207, 249); 
+    font-weight: 700;
+    border: 2px solid rgb(133, 207, 249);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+.comment .comment_form .comment_btn:hover {
+    background-color: rgb(133, 207, 249);
+    color: white;
+}
+

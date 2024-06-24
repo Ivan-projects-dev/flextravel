@@ -21,6 +21,7 @@
                 <input type="search" placeholder="Search..">
             </div>
             <div class="header_block">
+                <a class="header_link" href="#first">Home</a>
                 <a class="header_link" href="#second">Countries</a>
                 <a class="header_link" href="#third">Our offers</a>
                 <a class="header_link" href="#fourth">Form</a>
@@ -32,36 +33,8 @@
             </div>
         </nav>
     </header>
-
-    <div class="overlay" id="overlay">
-        <div class="sign_in-modal" id="sign_in-modal">
-            <div class="modal_close" id="closeModal" onclick="closeForm1()">&times;</div>
-            <form action="#" method="post" class="sign_in-form">
-                <label for="phone">Email:</label>
-                <input type="email" id="email" name="email" value="" required>
-                <label for="name">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button class="sign_in-btn" type="submit">Sign in</button>
-            </form> 
-        </div>
-
-        <div class="sign_up-modal" id="sign_up-modal">
-            <div class="modal_close" id="closeModal" onclick="closeForm2()">&times;</div>
-            <form action="#" method="post" class="sign_up-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" value="" required>
-                <label for="lname">Last name:</label>
-                <input type="text" id="surname" name="surname" value="" required>
-                <label for="phone">Email:</label>
-                <input type="email" id="email" name="email" value="" required>
-                <label for="name">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button class="sign_up-btn" type="submit">Sign up</button>
-            </form> 
-        </div>
-    </div>
     
-    <section class="first">
+    <section class="first" id="first">
         <video autoplay muted loop class="myVideo">
             <source src="video/intro1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
@@ -75,18 +48,18 @@
         <div class="container">
             <h2 class="second_name h2_template">Countries which you can visit</h2>
             <div class="second_box">
-                <div class="second_block">
+                <a class="second_block" href="#">
                     <img src="img/countries/estonia.jpg" alt="estonia" class="second_img">
                     <p class="second_text">Estonia</p>
-                </div>
-                <div class="second_block">
+                </a>
+                <a class="second_block" href="latvia/latvia.html">
                     <img src="img/countries/latvia.jpg" alt="latvia" class="second_img">
                     <p class="second_text">Latvia</p>
-                </div>
-                <div class="second_block">
+                </a>
+                <a class="second_block" href="#">
                     <img src="img/countries/lithuania.jpg" alt="lithuania" class="second_img">
                     <p class="second_text">Lithuania</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -185,6 +158,34 @@
             </div>
         </div>
     </footer>
+    
+    <div class="overlay" id="overlay">
+        <div class="sign_in-modal" id="sign_in-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm1()">&times;</div>
+            <form action="#" method="post" class="sign_in-form">
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_in-btn" type="submit">Sign in</button>
+            </form> 
+        </div>
+
+        <div class="sign_up-modal" id="sign_up-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm2()">&times;</div>
+            <form action="#" method="post" class="sign_up-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="" required>
+                <label for="lname">Last name:</label>
+                <input type="text" id="surname" name="surname" value="" required>
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_up-btn" type="submit">Sign up</button>
+            </form> 
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
