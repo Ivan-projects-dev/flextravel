@@ -194,11 +194,11 @@ html {
 
 .second .second_block .second_text {
     text-align: center;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 24px;
     text-align: center;
     margin-top: 10px;
-    color: rgb(4, 0, 126);
+    color: #23252A;
 }
 
 /* Third section */
@@ -247,6 +247,28 @@ html {
 
 .third .third_gallery .third_block:hover {
     transform: scale(1.05);
+}
+
+.third .third_gallery .third_block .overlay_for_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0; 
+    transition: all 0.3s ease 0s; 
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.third .third_gallery .third_block:hover .overlay_for_text {
+    opacity: 1;
 }
 
 /* Fourth section */
@@ -399,14 +421,14 @@ iframe {
     transform: translateX(-50%);
     width: 460px;
     height: 270px;
-    background-color: rgb(133, 207, 249);
+    background-color: #23252A;
     padding: 50px 68px 60px 68px;
     border-radius: 0px 0px 20px 20px;
 }
 
 .footer .footer_addr {
     margin-bottom: 36px;
-    color: #0d0d0d;
+    color: #edf0f1;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -415,7 +437,7 @@ iframe {
 
 .footer .footer_phone {
     display: block;
-    color: #0d0d0d;
+    color: #edf0f1;
     font-size: 20px;
     line-height: 20px;
     font-weight: 700;
@@ -424,7 +446,7 @@ iframe {
 }
 
 .footer .footer_phone:hover {
-    color: #0d0d0d;
+    color: #edf0f1;
 }
 
 .footer .footer_social {
@@ -439,14 +461,16 @@ iframe {
     align-items: center;
     width: 50px;
     height: 50px;
-    border: 2px solid #0d0d0d;
+    border: 2px solid #edf0f1;
     border-radius: 100%;
     margin: 0 15px;
+    transition: all 0.3s ease 0s;
+    fill: #edf0f1;
 }
 
 .footer .footer_social-item:hover {
-    background-color: #0d0d0d;
-    fill: rgb(133, 207, 249);
+    background-color: #edf0f1;
+    fill: #23252A;
 }
 
 .footer .footer_social-item svg {
