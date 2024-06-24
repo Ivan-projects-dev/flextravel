@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTravel</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header_nav">
+            <div class="header_block">
+                <a class="header_link" href="../../index.html"><img class="header_logo" src="../../icons/logo_mini.png" alt="logo"></a>
+                <input class="header_search" type="search" placeholder="Search..">
+            </div>
+            <div class="header_block">
+                <a class="header_link" href="../../index.html">Home</a>
+                <a class="header_link" href="../../index.html#second">Countries</a>
+                <a class="header_link" href="../../index.html#third">Our offers</a>
+                <a class="header_link" href="../../index.html#fourth">Form</a>
+                <a class="header_link" href="../../index.html#fifth">Reviews</a>
+            </div>
+            <div class="header_block">
+                <button onclick="openForm1()" class="header_option">Sign in</button>
+                <button onclick="openForm2()" class="header_option">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="city">
+        <div class="container">
+            <h2 class="city_name h2_template">Ventspils</h2>
+            <img src="" alt="ventspils" class="city_img">
+            <p class="city_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, distinctio quae quibusdam dolor alias modi at! Dolores aliquam odit tenetur omnis! Voluptatum dolores ipsam dolore suscipit fugit iste ex quia?</p>
+            <div class="comment_section">
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="comment">
+        <form action="#" method="post" class="comment_form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="" required>
+            <label for="lname">Last name:</label>
+            <input type="text" id="surname" name="surname" value="" required>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <button class="comment_btn" type="submit">Comment</button>
+        </form>
+    </section>
+
+    <div class="overlay" id="overlay">
+        <div class="sign_in-modal" id="sign_in-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm1()">&times;</div>
+            <form action="#" method="post" class="sign_in-form">
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_in-btn" type="submit">Sign in</button>
+            </form> 
+        </div>
+
+        <div class="sign_up-modal" id="sign_up-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm2()">&times;</div>
+            <form action="#" method="post" class="sign_up-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="" required>
+                <label for="lname">Last name:</label>
+                <input type="text" id="surname" name="surname" value="" required>
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_up-btn" type="submit">Sign up</button>
+            </form> 
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

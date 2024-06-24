@@ -64,7 +64,7 @@ html {
     height: 50px;
     width: 100%;
     position: fixed;
-    background-color: rgba(0,0,0,0.6);
+    background-color: #23252A;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -79,22 +79,61 @@ html {
     align-items: center;
 }
 
-.header .header_nav .header_block:nth-child(2) {
-    width: 500px;
+.header .header_nav .header_block {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.header .header_nav .header_block:nth-child(1) {
+    width: 250px;
+}
+
+.header .header_nav .header_block:nth-child(2) {
+    width: 500px;
+}
+
+.header .header_nav .header_block:nth-child(3) {
+    width: 220px;
+}
+
+.header .header_nav .header_block .header_search {
+    padding: 5px 15px;   
+    border: none;
+}
+
 .header .header_nav .header_block a {
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
+    color: #edf0f1;
+    transition: all 0.3s ease 0s;
+}
+
+.header .header_nav .header_block a:hover {
+    color: #0088a9;
+}
+
+.header .header_nav .header_block .header_logo {
+    height: 30px;
+    width: 30px;
 }
 
 .header .header_nav .header_block .header_option {
-    color: black;
+    background-color:   rgba(0, 136, 169, 1);
+    color: #edf0f1;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 9px 25px;
+    font-size: 16px;
+}
+
+.header .header_nav .header_block .header_option:hover {
+    background-color: rgba(0, 136, 169, 0.7);
 }
 
 /* First section */
@@ -105,7 +144,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     position: relative;
 }
 
@@ -145,7 +184,7 @@ html {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: all 0.3s ease 0s;
 }
 
 .second .second_block .second_img:hover {
@@ -203,7 +242,7 @@ html {
 }
 
 .third .third_gallery .third_block {
-    transition: 0.5s;
+    transition: all 0.3s ease 0s;
 }
 
 .third .third_gallery .third_block:hover {
@@ -253,24 +292,23 @@ html {
 }
 
 .fourth .main_form .main_btn, .sign_up-btn, .sign_in-btn {
+    background-color: rgba(0, 136, 169, 0.8);
     border-radius: 10px;
-    background-color: white; 
-    color: rgb(133, 207, 249); 
-    font-weight: 700;
-    border: 2px solid rgb(133, 207, 249);
-    padding: 16px 32px;
-    text-align: center;
     text-decoration: none;
     height: 50px;
     display: block;
-    font-size: 16px;
-    transition-duration: 0.4s;
+    color: #edf0f1;
+    font-weight: 500;
+    border: none;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    padding: 9px 25px;
+    font-size: 16px;
 }
   
 .fourth .main_form .main_btn:hover, .sign_up-btn:hover, .sign_in-btn:hover {
-    background-color: rgb(133, 207, 249);
-    color: white;
+    background-color:  rgba(0, 136, 169, 1);
 }
 
 .fourth .fourth_block {
@@ -530,23 +568,22 @@ iframe {
 }
 
 .comment .comment_form .comment_btn {
+    background-color: rgba(0, 136, 169, 0.8);
     border-radius: 10px;
-    background-color: white; 
-    color: rgb(133, 207, 249); 
-    font-weight: 700;
-    border: 2px solid rgb(133, 207, 249);
-    padding: 16px 32px;
-    text-align: center;
     text-decoration: none;
     height: 50px;
     display: block;
-    font-size: 16px;
-    transition-duration: 0.4s;
+    color: #edf0f1;
+    font-weight: 500;
+    border: none;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    padding: 9px 25px;
+    font-size: 16px;
 }
   
 .comment .comment_form .comment_btn:hover {
-    background-color: rgb(133, 207, 249);
-    color: white;
+    background-color:  rgba(0, 136, 169, 1);
 }
 
