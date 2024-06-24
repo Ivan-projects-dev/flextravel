@@ -14,6 +14,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header class="header">
+        <nav class="header_nav">
+            <div class="header_block">
+                <input type="search" placeholder="Search..">
+            </div>
+            <div class="header_block">
+                <a class="header_link" href="#second">Countries</a>
+                <a class="header_link" href="#third">Our offers</a>
+                <a class="header_link" href="#fourth">Form</a>
+                <a class="header_link" href="#fifth">Reviews</a>
+            </div>
+            <div class="header_block">
+                <button onclick="openForm1()" class="header_option">Sign in</button>
+                <button onclick="openForm2()" class="header_option">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay">
+        <div class="sign_in-modal" id="sign_in-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm1()">&times;</div>
+            <form action="#" method="post" class="sign_in-form">
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_in-btn" type="submit">Sign in</button>
+            </form> 
+        </div>
+
+        <div class="sign_up-modal" id="sign_up-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm2()">&times;</div>
+            <form action="#" method="post" class="sign_up-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="" required>
+                <label for="lname">Last name:</label>
+                <input type="text" id="surname" name="surname" value="" required>
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_up-btn" type="submit">Sign up</button>
+            </form> 
+        </div>
+    </div>
     
     <section class="first">
         <video autoplay muted loop class="myVideo">
@@ -25,7 +71,7 @@
         </div>
     </section>
 
-    <section class="second">
+    <section class="second" id="second">
         <div class="container">
             <h2 class="second_name h2_template">Countries which you can visit</h2>
             <div class="second_box">
@@ -46,21 +92,21 @@
     </section>
 
 
-    <section class="third">
+    <section class="third" id="third">
         <div class="container">
             <h2 class="third_name h2_template">What can you explore during our offered journeys?</h2>
             <div class="third_gallery">
-                <div href="#" class="third_block block1"><img src="img/third_section/sunset.webp" alt="" class="third_img"></div>
-                <div href="#" class="third_block block2"><img src="img/third_section/sunset.webp" alt="" class="third_img"></div>
-                <div href="#" class="third_block block3"><img src="img/third_section/sunset.webp" alt="" class="third_img"></div>
-                <div href="#" class="third_block block4"><img src="img/third_section/sunset.webp" alt="" class="third_img"></div>
-                <div href="#" class="third_block block5"><img src="img/third_section/sunset.webp" alt="" class="third_img"></div>
-                <div href="#" class="third_block block6"><img src="img/third_section/sunset.webp" alt="" class="third_img"></div>
+                <div href="#" class="third_block block1"><img src="img/third_section/historical.jpg" alt="historical" class="third_img"></div>
+                <div href="#" class="third_block block2"><img src="img/third_section/wildlife.avif" alt="wildlife" class="third_img"></div>
+                <div href="#" class="third_block block3"><img src="img/third_section/culinary.jpg" alt="culinary" class="third_img"></div>
+                <div href="#" class="third_block block4"><img src="img/third_section/landscapes.jpeg" alt="landscapes" class="third_img"></div>
+                <div href="#" class="third_block block5"><img src="img/third_section/activities.jpg" alt="activities" class="third_img"></div>
+                <div href="#" class="third_block block6"><img src="img/third_section/cultural.jpg" alt="cultural" class="third_img"></div>
             </div>
         </div>
     </section>
 
-    <section class="fourth">
+    <section class="fourth" id="fourth">
         <div class="container">
             <form action="#" method="post" class="main_form">
                 <label for="name">Name:</label>
@@ -68,7 +114,7 @@
                 <label for="lname">Last name:</label>
                 <input type="text" id="surname" name="surname" value="" required>
                 <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" value="" required pattern="\+[0-9]{9,14}>
+                <input type="tel" id="phone" name="phone" value="" required pattern="\+[0-9]{9,14}">
                 <label for="budget">Approximate budget:</label>
                 <input type="number" id="budget" name="budget" value="" required min="0">
                 <label for="comments">Comments:</label>
@@ -83,7 +129,7 @@
         </div>
     </section>
 
-    <section class="fifth">
+    <section class="fifth" id="fifth">
         <div class="container">
             <h2 class="fifth_name h2_template">Our clients reviews</h2>
             <div class="fifth_box">

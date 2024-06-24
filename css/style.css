@@ -58,6 +58,45 @@ html {
     font-style: normal;
 }
 
+/* Navigation bar */
+
+.header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    z-index: 1;
+}
+
+.header .header_nav {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header_nav .header_block:nth-child(2) {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header_nav .header_block a {
+    text-decoration: none;
+}
+
+.header .header_nav .header_block .header_option {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
 /* First section */
 
 .first {
@@ -66,7 +105,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6);
     position: relative;
 }
 
@@ -212,7 +251,7 @@ html {
     resize: none;
 }
 
-.fourth .main_form .main_btn {
+.fourth .main_form .main_btn, .sign_up-btn, .sign_in-btn {
     border-radius: 10px;
     background-color: white; 
     color: rgb(133, 207, 249); 
@@ -228,7 +267,7 @@ html {
     cursor: pointer;
 }
   
-.fourth .main_form .main_btn:hover {
+.fourth .main_form .main_btn:hover, .sign_up-btn:hover, .sign_in-btn:hover {
     background-color: rgb(133, 207, 249);
     color: white;
 }
@@ -376,3 +415,59 @@ iframe {
     width: 27px;
 }
 
+/* Modal window */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.sign_up-modal, .sign_in-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 400px;
+    border-radius: 15px;
+    background-color: rgb(224, 220, 220);
+}
+
+#sign_up-modal, #sign_in-modal {
+    display: none;
+}
+
+.sign_up-modal .modal_close, .sign_in-modal .modal_close {
+    position: absolute;
+    top: -15px;
+    right: -35px;
+    font-size: 50px;
+    color: rgb(133, 207, 249);
+    cursor: pointer;
+}
+
+.overlay .sign_up-modal .sign_up-form, .overlay .sign_in-modal .sign_in-form {
+    width: 310px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay .sign_up-modal .sign_up-form input, .overlay .sign_in-modal .sign_in-form input {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+    background-color: white;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.overlay .sign_up-modal .sign_up-form button, .overlay .sign_in-modal .sign_in-form button {
+    margin: 0;
+}
