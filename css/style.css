@@ -102,7 +102,7 @@ html {
     border: none;
 }
 
-.header .header_nav .header_block a {
+.header .header_nav .header_block a, .link_block .link_box a {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
@@ -110,7 +110,7 @@ html {
     transition: all 0.3s ease 0s;
 }
 
-.header .header_nav .header_block a:hover {
+.header .header_nav .header_block a:hover, .link_block .link_box a:hover {
     color: #0088a9;
 }
 
@@ -199,6 +199,35 @@ html {
 /* Booking page */
 
 .booking {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 100px 0 100px 0;
+}
+
+.booking .booking_form {
+    width: 310px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking .booking_form input, .booking .booking_form select{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+    background-color: white;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.booking .booking_form #luxury-seats, .booking .booking_form #coffee-machine {
+    height: 20px;
+}
+
+/* Gallery page */
+
+.gallery {
     min-height: 100vh;
     background-color: #F6F6F6;
     padding: 100px 0 100px 0;
@@ -381,7 +410,7 @@ html {
     resize: none;
 }
 
-.fourth .main_form .main_btn, .sign_up-btn, .sign_in-btn {
+.fourth .main_form .main_btn, .sign_up-btn, .sign_in-btn, .booking_btn {
     background-color: rgba(0, 136, 169, 0.8);
     border-radius: 10px;
     text-decoration: none;
@@ -397,7 +426,7 @@ html {
     font-size: 16px;
 }
   
-.fourth .main_form .main_btn:hover, .sign_up-btn:hover, .sign_in-btn:hover {
+.fourth .main_form .main_btn:hover, .sign_up-btn:hover, .sign_in-btn:hover, .booking_btn:hover {
     background-color:  rgba(0, 136, 169, 1);
 }
 
@@ -604,7 +633,7 @@ iframe {
     cursor: pointer;
 }
 
-/* Latvia */
+/* Countries */
 
 .country {
     min-height: 1000px;
@@ -612,6 +641,21 @@ iframe {
     padding: 100px 0 100px 0;
 }
 
+.link_block {
+    height: 50px;
+    width: 100%;
+    background-color: #23252A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_block .link_box {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Country -> city */
 

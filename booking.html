@@ -53,15 +53,15 @@
 
     <section class="booking">
         <div class="container">
-            <form action="#" method="post">
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"><br><br>
-                <label for="credit-card">Credit Card Number:</label><br>
-                <input type="text" id="credit-card" name="credit-card" required pattern="\d{16}" title="Credit card number must be 16 digits"><br><br>
-                <label for="exp-date">Expiration Date:</label><br>
-                <input type="month" id="exp-date" name="exp-date" required min="2024-07"><br><br>
-                <label for="cvc">CVC:</label><br>
-                <input type="text" id="cvc" name="cvc" required pattern="\d{3}" title="CVC must be 3 digits"><br><br>
+            <form action="#" method="post" class="booking_form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <label for="credit-card">Credit Card Number:</label>
+                <input type="text"  id="credit-card" name="credit-card" required pattern="\d{16}" title="Credit card number must be 16 digits">
+                <label for="exp-date">Expiration Date:</label>
+                <input type="month" id="exp-date" name="exp-date" required min="2024-07">
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" name="cvc" required pattern="\d{3}" title="CVC must be 3 digits">
                 <label for="destination">Choose your destination:</label>
                 <select name="destination" id="destination">     
                     <option value="liepaja">Liepaja</option>
@@ -79,12 +79,12 @@
                     <option value="tartu">Tartu</option>
                     <option value="haapsalu">Haapsalu</option>
                     <option value="narva">Narva</option>
-                </select> <br><br>
+                </select> 
+                <label for="luxury-seats">Luxury Seats</label>
                 <input type="checkbox" id="luxury-seats" name="luxury-seats">
-                <label for="luxury-seats">Luxury Seats</label><br><br>
+                <label for="coffee-machine">Free Access to Coffee Machine</label>
                 <input type="checkbox" id="coffee-machine" name="coffee-machine">
-                <label for="coffee-machine">Free Access to Coffee Machine</label><br><br>
-                <button type="submit">Book Now</button>
+                <button class="booking_btn" type="submit">Book Now</button>
             </form>
         </div>
     </section>
