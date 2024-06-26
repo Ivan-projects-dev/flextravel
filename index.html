@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,136 +15,98 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header class="header">
         <nav class="header_nav">
             <div class="header_block">
                 <a class="header_link" href="#first"><img class="header_logo" src="icons/logo_mini.png" alt="logo"></a>
-                <div class="dropdown">
-                    <button>Choose city for tour</button>
-                    <div class="dropdown-content">
-                        <a href="countries/latvia.html#liepaja">Liepaja</a>
-                        <a href="countries/latvia.html#ventspils">Ventspils</a>
-                        <a href="countries/latvia.html#daugavpils">Daugavpils</a>
-                        <a href="countries/latvia.html#cesis">Cesis</a>
-                        <a href="countries/latvia.html#riga">Riga</a>
-                        <a href="countries/lithuania.html#vilnius">Vilnius</a>
-                        <a href="countries/lithuania.html#trakai">Trakai</a>
-                        <a href="countries/lithuania.html#palanga">Palanga</a>
-                        <a href="countries/lithuania.html#klaipeda">Klaipeda</a>
-                        <a href="countries/lithuania.html#siauliai">Siauliai</a>
-                        <a href="countries/estonia.html#tallinn">Tallinn</a>
-                        <a href="countries/estonia.html#parnu">Parnu</a>
-                        <a href="countries/estonia.html#tartu">Tartu</a>
-                        <a href="countries/estonia.html#haapsalu">Haapsalu</a>
-                        <a href="countries/estonia.html#narva">Narva</a>
-                    </div>
-                  </div>
-            </div>
+                <input class="header_search" type="search" placeholder="Enter destination..." id="headerSearchInput">
+                <div id="searchResults"></div>
+            </div>            
             <div class="header_block">
-                <a class="header_link" href="about_us.html">About us</a>
+                <a class="header_link" href="#first">Home</a>
                 <a class="header_link" href="#second">Countries</a>
                 <a class="header_link" href="#third">Our offers</a>
                 <a class="header_link" href="#fourth">Form</a>
                 <a class="header_link" href="#fifth">Reviews</a>
             </div>
             <div class="header_block">
-                <button onclick="openForm1()" class="header_option">Sign in</button>
-                <button onclick="openForm2()" class="header_option">Sign up</button>
+                <button class="header_option"><a href = "login.php">Sign in</a></button>
+                <button class="header_option"><a href = "register.php">Sign up</a></button>
             </div>
         </nav>
-    </header>
-    
+    </header>    
     <section class="first" id="first">
         <video autoplay muted loop class="myVideo">
             <source src="video/intro1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
-        <div class="container">
-            <img src="icons/logo.png" alt="logo">
-        </div>
+        <div class="container"><img src="icons/logo.png" alt="logo"></div>
     </section>
-
     <section class="second" id="second">
         <div class="container">
             <h2 class="second_name h2_template">Countries which you can visit</h2>
             <div class="second_box">
-                <a class="second_block" href="countries/estonia.html">
+                <a class="second_block" href="#">
                     <img src="img/countries/estonia.jpg" alt="estonia" class="second_img">
                     <p class="second_text">Estonia</p>
                 </a>
-                <a class="second_block" href="countries/latvia.html">
+                <a class="second_block" href="latvia/latvia.html">
                     <img src="img/countries/latvia.jpg" alt="latvia" class="second_img">
                     <p class="second_text">Latvia</p>
                 </a>
-                <a class="second_block" href="countries/lithuania.html">
+                <a class="second_block" href="#">
                     <img src="img/countries/lithuania.jpg" alt="lithuania" class="second_img">
                     <p class="second_text">Lithuania</p>
                 </a>
             </div>
         </div>
     </section>
-
-
     <section class="third" id="third">
         <div class="container">
             <h2 class="third_name h2_template">What can you explore during our offered journeys?</h2>
             <div class="third_gallery">
                 <div href="#" class="third_block block1">
                     <img src="img/third_section/historical.jpg" alt="historical" class="third_img">
-                    <div class="overlay_for_text">
-                        <p>Historical and Architectural Marvels</p>
-                    </div>
+                    <div class="overlay_for_text"><p>Historical and Architectural Marvels</p></div>
                 </div>
                 <div href="#" class="third_block block2">
                     <img src="img/third_section/wildlife.avif" alt="wildlife" class="third_img">
-                    <div class="overlay_for_text">
-                        <p>Wildlife Encounters</p>
-                    </div>
+                    <div class="overlay_for_text"><p>Wildlife Encounters</p></div>
                 </div>
                 <div href="#" class="third_block block3">
                     <img src="img/third_section/culinary.jpg" alt="culinary" class="third_img">
-                    <div class="overlay_for_text">
-                        <p>Culinary Delights</p>
-                    </div>
+                    <div class="overlay_for_text"><p>Culinary Delights</p></div>
                 </div>
                 <div href="#" class="third_block block4">
                     <img src="img/third_section/landscapes.jpeg" alt="landscapes" class="third_img">
-                    <div class="overlay_for_text">
-                        <p>Breathtaking Landscapes</p>
-                    </div>
+                    <div class="overlay_for_text"><p>Breathtaking Landscapes</p></div>
                 </div>
                 <div href="#" class="third_block block5">
                     <img src="img/third_section/activities.jpg" alt="activities" class="third_img">
-                    <div class="overlay_for_text">
-                        <p>Adventure Activities</p>
-                    </div>
+                    <div class="overlay_for_text"><p>Adventure Activities</p></div>
                 </div>
                 <div href="#" class="third_block block6">
                     <img src="img/third_section/cultural.jpg" alt="cultural" class="third_img">
-                    <div class="overlay_for_text">
-                        <p>Cultural Experiences</p>
-                    </div>
+                    <div class="overlay_for_text"><p>Cultural Experiences</p></div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="fourth" id="fourth">
         <div class="container">
-            <form action="#" method="post" class="main_form" id="main_form">
+            <form action="submit_form.php" method="post" class="main_form" id="myForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" value="" required>
+                <input type="text" id="name" name="name" value="" required pattern="[A-Za-z]{2,}" title="Must be longer than 1 character and do not contain numbers">
                 <label for="lname">Last name:</label>
-                <input type="text" id="surname" name="surname" value="" required>
+                <input type="text" id="surname" name="surname" value="" required pattern="[A-Za-z]{2,}" title="Must be longer than 1 character and do not contain numbers">
                 <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" value="" required pattern="\+[0-9]{9,14}">
-                <label for="budget">Approximate budget:</label>
+                <input type="tel" id="phone" name="phone" value="" required pattern="\+[0-9]{9,15}" title="Enter your phone number starting with + and consisting of 9 to 15 digits">
+                <label for="budget">Approximate budget (euro):</label>
                 <input type="number" id="budget" name="budget" value="" required min="0">
                 <label for="comments">Comments:</label>
                 <textarea id="comments" name="comments"></textarea>
                 <button class="main_btn" type="submit">Submit</button>
-            </form>     
+            </form>
             <div class="fourth_block">
                 <p class="fourth_text">Fill the form if you don't know which place you want to visit and you need advice. Our support team will contact you!</p>
                 <i class="fa-solid fa-headset third_icon"></i>
@@ -151,7 +114,6 @@
             </div>
         </div>
     </section>
-
     <section class="fifth" id="fifth">
         <div class="container">
             <h2 class="fifth_name h2_template">Our clients reviews</h2>
@@ -192,51 +154,27 @@
                         </div>
                     </div>
                 </div>
+                <form action="submit_review.php" method="post" class="review-form">
+                    <input type="hidden" id="trip_name" name="trip_name" value="selected_trip_name">
+                    <label for="mark">Rating:</label>
+                    <input type="number" id="mark" name="mark" value="" required min="1" max="5">
+                    <label for="description">Review:</label>
+                    <textarea id="description" name="description" required></textarea>
+                    <button class="submit-review-btn" type="submit">Submit Review</button>
+                </form>                
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1490.8387763408334!2d24.11534339900135!3d56.9513787136483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd18161db11%3A0xfd9e4a8e6db032d9!2zUmFpxYZhIGJ1bHbEgXJpcyAxMywgQ2VudHJhIHJham9ucywgUsSrZ2EsIExWLTEwNTA!5e0!3m2!1sru!2slv!4v1719171145728!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         <div class="footer_info">
-            <address class="footer_addr">Riga, Raiņa bulvāris 13</address>
+            <address class="footer_addr">Riga, Raina bulvaris 13</address>
             <a class="footer_phone" href="tel:84999228974">+3712345678</a>
             <div class="footer_social">
                 <a href="#" class="footer_social-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
                 <a href="#" class="footer_social-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
             </div>
         </div>
-    </footer>
-    
-    <div class="overlay" id="overlay">
-        <div class="sign_in-modal" id="sign_in-modal">
-            <div class="modal_close" id="closeModal" onclick="closeForm1()">&times;</div>
-            <form action="#" method="post" class="sign_in-form">
-                <label for="phone">Email:</label>
-                <input type="email" id="email" name="email" value="" required>
-                <label for="name">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button class="sign_in-btn" type="submit">Sign in</button>
-            </form> 
-        </div>
-
-        <div class="sign_up-modal" id="sign_up-modal">
-            <div class="modal_close" id="closeModal" onclick="closeForm2()">&times;</div>
-            <form action="#" method="post" class="sign_up-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" value="" required>
-                <label for="lname">Last name:</label>
-                <input type="text" id="surname" name="surname" value="" required>
-                <label for="phone">Email:</label>
-                <input type="email" id="email" name="email" value="" required>
-                <label for="name">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button class="sign_up-btn" type="submit">Sign up</button>
-            </form> 
-        </div>
-    </div>
-
-    <script src="js/script.js"></script>
+    </footer>     
 </body>
 </html>
