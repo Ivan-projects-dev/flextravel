@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTravel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header_nav">
+            <div class="header_block">
+                <a class="header_link" href="index.html#first"><img class="header_logo" src="icons/logo_mini.png" alt="logo"></a>
+                <div class="dropdown">
+                    <button>Choose city for tour</button>
+                    <div class="dropdown-content">
+                        <a href="countries/latvia.html#liepaja">Liepaja</a>
+                        <a href="countries/latvia.html#ventspils">Ventspils</a>
+                        <a href="countries/latvia.html#daugavpils">Daugavpils</a>
+                        <a href="countries/latvia.html#cesis">Cesis</a>
+                        <a href="countries/latvia.html#riga">Riga</a>
+                        <a href="countries/lithuania.html#vilnius">Vilnius</a>
+                        <a href="countries/lithuania.html#trakai">Trakai</a>
+                        <a href="countries/lithuania.html#palanga">Palanga</a>
+                        <a href="countries/lithuania.html#klaipeda">Klaipeda</a>
+                        <a href="countries/lithuania.html#siauliai">Siauliai</a>
+                        <a href="countries/estonia.html#tallinn">Tallinn</a>
+                        <a href="countries/estonia.html#parnu">Parnu</a>
+                        <a href="countries/estonia.html#tartu">Tartu</a>
+                        <a href="countries/estonia.html#haapsalu">Haapsalu</a>
+                        <a href="countries/estonia.html#narva">Narva</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="header_block">
+                <a class="header_link" href="about_us.html">About us</a>
+                <a class="header_link" href="index.html#second">Countries</a>
+                <a class="header_link" href="index.html#third">Our offers</a>
+                <a class="header_link" href="index.html#fourth">Form</a>
+                <a class="header_link" href="index.html#fifth">Reviews</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="booking">
+        <div class="container">
+            <form action="#" method="post">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"><br><br>
+                <label for="credit-card">Credit Card Number:</label><br>
+                <input type="text" id="credit-card" name="credit-card" required pattern="\d{16}" title="Credit card number must be 16 digits"><br><br>
+                <label for="exp-date">Expiration Date:</label><br>
+                <input type="month" id="exp-date" name="exp-date" required min="2024-07"><br><br>
+                <label for="cvc">CVC:</label><br>
+                <input type="text" id="cvc" name="cvc" required pattern="\d{3}" title="CVC must be 3 digits"><br><br>
+                <label for="destination">Choose your destination:</label>
+                <select name="destination" id="destination">     
+                    <option value="liepaja">Liepaja</option>
+                    <option value="ventspils">Ventspils</option>
+                    <option value="daugavpils">Daugavpils</option>
+                    <option value="cesis">Cesis</option>
+                    <option value="riga">Riga</option>
+                    <option value="vilnius">Vilnius</option>
+                    <option value="trakai">Trakai</option>
+                    <option value="palanga">Palanga</option>
+                    <option value="klaipeda">Klaipeda</option>
+                    <option value="siauliai">Siauliai</option>
+                    <option value="tallinn">Tallinn</option>
+                    <option value="parnu">Parnu</option>
+                    <option value="tartu">Tartu</option>
+                    <option value="haapsalu">Haapsalu</option>
+                    <option value="narva">Narva</option>
+                </select> <br><br>
+                <input type="checkbox" id="luxury-seats" name="luxury-seats">
+                <label for="luxury-seats">Luxury Seats</label><br><br>
+                <input type="checkbox" id="coffee-machine" name="coffee-machine">
+                <label for="coffee-machine">Free Access to Coffee Machine</label><br><br>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

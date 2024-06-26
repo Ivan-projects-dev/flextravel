@@ -188,6 +188,22 @@ html {
     font-weight: 500;
 }
 
+/* Comment page */
+
+.comment_section {
+    min-height: 600px;
+    background-color: #F6F6F6;
+    padding: 100px 0 100px 0;
+}
+
+/* Booking page */
+
+.booking {
+    min-height: 100vh;
+    background-color: #F6F6F6;
+    padding: 100px 0 100px 0;
+}
+
 /* First section */
 
 .first {
