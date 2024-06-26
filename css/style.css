@@ -136,6 +136,58 @@ html {
     background-color: rgba(0, 136, 169, 0.7);
 }
 
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown button {
+    padding: 5px 15px;   
+    border: none;
+}
+
+.dropdown-content {
+    background-color: #23252A;
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+/* About us */
+
+.about_us {
+    min-height: 1000px;
+    background-color: #F6F6F6;
+    padding: 100px 0 100px 0;
+}
+
+.about_us .about_us-h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about_us .about_us-text {
+    color: #23252A;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
 /* First section */
 
 .first {
@@ -144,7 +196,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.6);
     position: relative;
 }
 
@@ -538,20 +590,17 @@ iframe {
 
 /* Latvia */
 
-.latvia {
+.country {
     min-height: 1000px;
     background-color: #F6F6F6;
     padding: 100px 0 100px 0;
 }
 
-/* Latvia -> Riga */
 
 /* Country -> city */
 
 .city {
-    min-height: 600px;
-    background-color: #F6F6F6;
-    padding: 100px 0 100px 0;
+    margin: 50px 0 50px 0;
 }
 
 

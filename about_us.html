@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTravel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header_nav">
+            <div class="header_block">
+                <a class="header_link" href="index.html"><img class="header_logo" src="icons/logo_mini.png" alt="logo"></a>
+                <input class="header_search" type="search" placeholder="Search..">
+            </div>
+            <div class="header_block">
+                <a class="header_link" href="about_us.html">About us</a>
+                <a class="header_link" href="index.html#second">Countries</a>
+                <a class="header_link" href="index.html#third">Our offers</a>
+                <a class="header_link" href="index.html#fourth">Form</a>
+                <a class="header_link" href="index.html#fifth">Reviews</a>
+            </div>
+            <div class="header_block">
+                <button onclick="openForm1()" class="header_option">Sign in</button>
+                <button onclick="openForm2()" class="header_option">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="about_us">
+        <div class="container">
+            <img src="icons/logo.png" alt="logo" class="about_us-img">
+            <h2 class="about_us-h2">Welcome to FlexTravel!</h2>
+            <p class="about_us-text"> 
+                Discover the Hidden Gems of the Baltic States with FlexTravel!
+                
+                Based in the heart of Riga, FlexTravel is your premier travel agency specializing in unforgettable journeys across the beautiful Baltic countries: Latvia, Lithuania, and Estonia. Whether you're a history buff, a nature enthusiast, or simply looking for a unique cultural experience, FlexTravel offers a variety of meticulously curated tours that showcase the best of what the Baltics have to offer.
+                <br><br>
+                <b>Our Services:</b>
+                <br><br>
+                Cultural Tours: Immerse yourself in the rich history and vibrant culture of the Baltics. Explore medieval castles, ancient churches, and UNESCO World Heritage Sites, while our knowledgeable guides bring the past to life with fascinating stories and insights.
+                <br><br>
+                Nature Excursions: From the stunning Baltic Sea coastlines to the lush forests and serene lakes, our nature tours offer breathtaking views and peaceful retreats. Experience the natural beauty of Gauja National Park in Latvia, the Curonian Spit in Lithuania, and Lahemaa National Park in Estonia.
+                <br><br>
+                City Breaks: Discover the charm and elegance of the Baltic capitals. Wander through the cobblestone streets of Riga’s Old Town, marvel at the baroque architecture of Vilnius, and enjoy the vibrant cultural scene of Tallinn.
+                <br><br>
+                Adventure Tours: For the thrill-seekers, our adventure tours provide exciting activities such as hiking, biking, and kayaking. Explore the rugged landscapes and pristine wilderness of the Baltics in an exhilarating way.
+                <br><br>
+                Customized Tours: At FlexTravel, we understand that every traveler is unique. That's why we offer customized tours tailored to your specific interests and preferences. Let us create a personalized itinerary just for you!
+                <br><br>
+                <b>Why Choose FlexTravel?</b> 
+                <br><br>
+                Local Expertise: With our deep knowledge of the Baltic region, we ensure that you experience the most authentic and memorable aspects of each destination.
+                <br><br>
+                Quality Service: From the moment you book your tour until the end of your journey, our dedicated team is committed to providing exceptional service and support.
+                <br><br>
+                Flexibility: We offer both group and private tours, as well as flexible travel dates and itineraries to suit your schedule and interests.
+                <br><br>
+                Sustainable Tourism: We are committed to promoting sustainable tourism practices that protect and preserve the natural and cultural heritage of the Baltic States.
+                <br><br>
+                Join us on a journey of discovery and adventure in the Baltics. Let FlexTravel be your guide to an unforgettable travel experience.</p>
+        </div>
+    </section>
+
+    
+    <div class="overlay" id="overlay">
+        <div class="sign_in-modal" id="sign_in-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm1()">&times;</div>
+            <form action="#" method="post" class="sign_in-form">
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_in-btn" type="submit">Sign in</button>
+            </form> 
+        </div>
+
+        <div class="sign_up-modal" id="sign_up-modal">
+            <div class="modal_close" id="closeModal" onclick="closeForm2()">&times;</div>
+            <form action="#" method="post" class="sign_up-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="" required>
+                <label for="lname">Last name:</label>
+                <input type="text" id="surname" name="surname" value="" required>
+                <label for="phone">Email:</label>
+                <input type="email" id="email" name="email" value="" required>
+                <label for="name">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="sign_up-btn" type="submit">Sign up</button>
+            </form> 
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
